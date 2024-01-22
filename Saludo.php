@@ -21,14 +21,14 @@
         $fecha = getdate();
         
         switch($fecha["hours"]) {
+            case $fecha["hours"] > 18 || $fecha["hours"] === 0 || $fecha["hours"] < 5:
+                return "Buenas noches, ";
+            break;
             case $fecha["hours"] >= 5 && $fecha["hours"] <= 12:
                 return "Buenos dias, ";
             break;
             case $fecha["hours"] > 12 && $fecha["hours"] <= 18:
                 return "Buenas tardes, ";
-            break;
-            case $fecha["hours"] > 18 && $fecha["hours"] < 5:
-                return "Buenas noches, ";
             break;
         }
     }
