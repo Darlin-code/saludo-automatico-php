@@ -1,6 +1,5 @@
 <?php
     session_start();
-    date_default_timezone_set("America/Santo_Domingo");
     
     //Validando el nombre del usuario.
     if (isset($_POST["nombre"])) {
@@ -18,6 +17,7 @@
 
     //Verificando la hora actual.
     function Saludo() {
+        date_default_timezone_set("America/Santo_Domingo");
         $fecha = getdate();
         
         switch($fecha["hours"]) {
