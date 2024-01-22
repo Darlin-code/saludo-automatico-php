@@ -22,13 +22,13 @@
         
         switch($fecha["hours"]) {
             case $fecha["hours"] >= 5 && $fecha["hours"] <= 12:
-                return "<hr>Buenos dias, ";
+                return "Buenos dias, ";
             break;
             case $fecha["hours"] > 12 && $fecha["hours"] <= 18:
-                return "<hr>Buenas tardes, ";
+                return "Buenas tardes, ";
             break;
             case $fecha["hours"] > 18 && $fecha["hours"] < 5:
-                return "<hr>Buenas noches, ";
+                return "Buenas noches, ";
             break;
         }
     }
