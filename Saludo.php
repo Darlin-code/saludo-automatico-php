@@ -1,6 +1,7 @@
 <?php
     //Verificando la hora actual.
     function Saludo() {
+        date_default_timezone_set("America/Santo_Domingo");
         $fecha = getdate();
 
         if ($fecha["hours"] === 0) {
